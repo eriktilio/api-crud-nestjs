@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()
     .setTitle("API Crud NestJS")
-    .setDescription("API Crud em NestJS")
+    .setDescription(`Ambiente: ${process.env.NODE_ENV}`)
     .setVersion("1.0")
     .build();
 
